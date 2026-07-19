@@ -1,0 +1,27 @@
+[project]
+name = "intro-qiskit"
+version = "0.1.0"
+description = "Quantum computing experiments with Qiskit and the MPS simulator, designed for VS Code + Jupyter."
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+
+dependencies = [
+    "qiskit>=1.0",
+    "qiskit-aer>=0.14",
+    "matplotlib>=3.7",
+    "pylatexenc>=2.10",
+    "notebook>=7.0",
+    "nbconvert>=7.0",
+    "qiskit-ibm-runtime",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4.0",
+]
+
+[tool.uv]
+# uv picks up the dependencies above and creates a reproducible lock file.
+# Run `uv sync` to create .venv and install everything.
+# This is a notebook-only project — do not build/install it as a package.
+package = false
