@@ -39,10 +39,10 @@ Students create a free IBM Quantum account, open the Composer drag-and-drop circ
 
 - 01 - Quantum Coin Flip: bottom of student-note.md 
 - 02 - Schrodinger Qbit: ep3_Hello_World.ipynb in 2q-dim
-- 03 - Quantum Teleportation: src/ folder in teacher repo. 
+- 03 - Quantum Teleportation: src/ with teacher. 
 - 04 - Bell State Entanglement: ep3_Hello_World.ipynb
-- 05 - Quantum Not Gate: src/ folder in teacher repo. 
-- [BONUS] 06 - Matrix multiplication: src/ folder in teacher repo
+- 05 - Quantum Not Gate: src/ with teacher. 
+- [BONUS] 06 - Matrix multiplication: src/ with teacher
 
 
 ---
