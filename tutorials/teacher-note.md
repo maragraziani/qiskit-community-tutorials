@@ -59,8 +59,7 @@ Tell students to imagine a coin spinning in the air — it's neither heads nor t
 Each "shot" is an independent quantum measurement. With 1024 shots (the default), you'd expect roughly 512 zeros and 512 ones, but natural variation means you'll usually see something like 498/526. If a student gets 1024 zeros, something is wrong with the circuit (the H gate may be missing). This is a good debugging discussion.
 
 ### What else can quantum computers do?
-Keep this brief and high-level: simulating molecules for drug discovery, optimising logistics routes, and generating secure random numbers for encryption. Avoid claiming quantum computers are "always faster" — they're only faster for specific problem types.
-
+Keep this brief and high-level: simulating molecules for drug discovery, optimising logistics routes, and generating secure random numbers for encryption.
 ---
 
 ## Frequently Asked Questions
