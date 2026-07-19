@@ -1,5 +1,5 @@
 [project]
-name = "intro-qiskit"
+name = "qiskit-community-tutorials"
 version = "0.1.0"
 description = "Quantum computing experiments with Qiskit and the MPS simulator, designed for VS Code + Jupyter."
 readme = "README.md"
