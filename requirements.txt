@@ -1,0 +1,13 @@
+# Core dependencies — install with: pip install -r requirements.txt
+# Requires Python >=3.9, <3.13
+
+qiskit>=1.0
+qiskit-aer>=0.14
+matplotlib>=3.7
+pylatexenc>=2.10
+notebook>=7.0
+nbconvert>=7.0
+qiskit-ibm-runtime
+
+# Optional — JupyterLab UI (pip install -r requirements.txt -r requirements-dev.txt)
+# See requirements-dev.txt
