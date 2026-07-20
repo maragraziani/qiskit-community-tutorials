@@ -123,7 +123,7 @@ Remove the Measure gate and switch to the **Statevector** visualisation in Compo
 
 ---
 ---
-## Experiment 3 - 
+## Experiment 3 - Quantum Teleportation
 
 2. Click **New circuit**.
 3. Make sure you have **3 qubits** (`q[0]`, `q[1]`, `q[2]`) and **3 classical bits** (`c[0]`, `c[1]`, `c[2]`).  
