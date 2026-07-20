@@ -125,26 +125,22 @@ Remove the Measure gate and switch to the **Statevector** visualisation in Compo
 ---
 ## Experiment 3 - Quantum Teleportation
 
-2. Click **New circuit**.
-3. Make sure you have **3 qubits** (`q[0]`, `q[1]`, `q[2]`) and **3 classical bits** (`c[0]`, `c[1]`, `c[2]`).  
-   Use the ➕ button on the left panel to add wires if needed.
+- Click **New circuit**.
+Make sure you have **3 qubits** (`q[0]`, `q[1]`, `q[2]`) and **3 classical bits** (`c[0]`, `c[1]`, `c[2]`).  Use the ➕ button on the left panel to add wires if needed.
 
-### 2 · Prepare the state to teleport (Step 1)
-- Drag an **H gate** onto `q[0]`.  
+- Prepare the state to teleport (Step 1). Drag an **H gate** onto `q[0]`.  
   This puts `q[0]` into the `|+⟩` superposition — the state Alice wants to send to Bob.
 
-### 3 · Create the Bell pair (Step 2)
-- Drag an **H gate** onto `q[1]`.
-- Drag a **CNOT gate** with **control on `q[1]`** and **target on `q[2]`**.  
+- Create the Bell pair (Step 2)
+Drag an **H gate** onto `q[1]`.
+Drag a **CNOT gate** with **control on `q[1]`** and **target on `q[2]`**.  
   (`q[1]` and `q[2]` are now entangled — this is the shared resource between Alice and Bob.)
 
-### 4 · Bell measurement — Alice's side (Step 3)
-- Drag a **CNOT gate** with **control on `q[0]`** and **target on `q[1]`**.
-- Drag an **H gate** onto `q[0]`.
-- Drag a **Measure** block onto `q[0]` → wire it to classical bit `c[0]`.
-- Drag a **Measure** block onto `q[1]` → wire it to classical bit `c[1]`.
+- Bell measurement — Alice's side (Step 3)
+Drag a **CNOT gate** with **control on `q[0]`** and **target on `q[1]`**. Drag an **H gate** onto `q[0]`. Drag a **Measure** block onto `q[0]` → wire it to classical bit `c[0]`.
+ Drag a **Measure** block onto `q[1]` → wire it to classical bit `c[1]`.
 
-### 5 · Classical feed-forward corrections — Bob's side (Step 4)
+- Classical feed-forward corrections — Bob's side (Step 4)
 Composer supports **if-conditions** (the double-line wire):
 
 1. Drag an **X gate** onto `q[2]`.  
@@ -154,10 +150,10 @@ Composer supports **if-conditions** (the double-line wire):
 
 > **Tip:** In Composer the conditional wire is shown as a double horizontal line running from the classical register up to the gate. If you don't see it, zoom in — it is thin!
 
-### 6 · Measure Bob's qubit (Step 5)
-- Drag a **Measure** block onto `q[2]` → wire it to classical bit `c[2]`.
+- Measure Bob's qubit (Step 5)
+Drag a **Measure** block onto `q[2]` → wire it to classical bit `c[2]`.
 
-### 7 · Run and verify
+- Run and verify
 1. Click **Simulate** (statevector or QASM simulator — either works).
 2. In the **Probabilities** panel, look at the distribution of `c[2]` (Bob's bit).  
    You should see **~50 % `0`** and **~50 % `1`**, matching the `|+⟩` state.
